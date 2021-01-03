@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            Do you know Geography?
+        </title>
+        <script src="js/script.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="startBox" id = "startBox">
+                <h1>Do you know Geography?</h1>
+                <input type="button" class="answerbutton" value ="Start" id="start-btn">
+            </div>
+            <div class = "hide" id="gameOver-box">
+                <div id="gameOver">
+                    <h1>Game over!</h1>
+                    <h3 id="scorePromt"></h3>
+                    <input type="button" class="answerbutton" value = "Play Again" id="goPlay" onClick="window.location.reload()">
+                </div>
+            </div>  
+            <div class = "hide" id="questionBox">
+                <h3 id="scoreText"></h3>
+                <h1 id="question"></h1>
+                <div class="btn-grid">
+                    <input type="button" class="answerbutton" value = "Submit" id="answer1">
+                    <input type="button" class="answerbutton" value = "Submit" id="answer2">
+                    <input type="button" class="answerbutton" value = "Submit" id="answer3">
+                    <input type="button" class="answerbutton" value = "Submit" id="answer4">
+                </div>
+            </div>  
+    </div>
+
+    </body>
+    <script>document.getElementById('start-btn').addEventListener('click', startGame)</script>
+</html>
